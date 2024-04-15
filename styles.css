@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4; /* Cambio el color de fondo */
+    background-color: #f8f8f8; /* Cambio el color de fondo */
 }
 
 .container {
@@ -15,7 +15,7 @@ body {
 
 /* Estilos del encabezado */
 header {
-    background-color: #333;
+    background-color: #ff6f61; /* Cambio el color de fondo */
     color: #fff;
     padding: 20px 0; /* Incremento el padding */
     text-align: center;
@@ -24,6 +24,7 @@ header {
 header h1 {
     margin: 0;
     font-size: 36px; /* Aumento el tamaño de fuente */
+    color: #fff; /* Color de texto blanco */
 }
 
 nav ul {
@@ -45,6 +46,11 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 18px; /* Aumento el tamaño de fuente */
+    transition: color 0.3s; /* Agrego transición de color */
+}
+
+nav ul li a:hover {
+    color: #ffd166; /* Cambio de color al pasar el mouse */
 }
 
 /* Estilos de las secciones */
@@ -55,12 +61,13 @@ section {
 
 section h2 {
     margin-bottom: 30px; /* Incremento el margen inferior */
-    font-size: 24px; /* Aumento el tamaño de fuente */
+    font-size: 28px; /* Aumento el tamaño de fuente */
+    color: #ff6f61; /* Cambio de color */
 }
 
 /* Estilos del pie de página */
 footer {
-    background-color: #333;
+    background-color: #ff6f61; /* Cambio el color de fondo */
     color: #fff;
     text-align: center;
     padding: 20px 0; /* Incremento el padding */
