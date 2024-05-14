@@ -1,13 +1,22 @@
-// JavaScript para animar el scroll suave al hacer clic en los enlaces del menú
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-        e.preventDefault();
+// script.js
+const menuButton = document.getElementById("menu-button");
+const fullPageMenu = document.getElementById("full-page-menu");
+const closeButton = document.getElementById("close-button");
 
-        const target = document.querySelector(this.getAttribute('href'));
-
-        window.scrollTo({
-            top: target.offsetTop - 50, // Ajuste para compensar el encabezado
-            behavior: 'smooth'
-        });
-    });
+// Muestra el menú cuando se hace clic en el botón
+menuButton.addEventListener("click", () => {
+    fullPageMenu.classList.add("show"); // Usamos clases para transiciones suaves
 });
+
+// Cierra el menú cuando se hace clic en el botón de cierre
+closeButton.addEventListener("click", () => {
+    fullPageMenu.classList.remove("show");
+});
+
+// Cierra el menú cuando se hace clic fuera del menú
+document.addEventListener("click", (event) => {
+    if (!fullPageMenu.contains(event.target) && event.target !== menuButton) {
+        fullPageMenu.classList.remove("show");
+    }
+});
+

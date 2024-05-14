@@ -2,57 +2,55 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Return 0 - Creación de Proyectos</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Return 0 and associates - Empresa de Desarrollo Web</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Incluir iconos de FontAwesome para redes sociales -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h1>Return 0</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Inicio</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
+
+    <!-- Encabezado con imagen de fondo -->
+    <header class="header-background">
+        <div class="brand">
+            <img src="RECURS/Return.jpg" alt="Logo de Return 0 and Socies" class="logo"> <!-- Logo de la empresa -->
+            <h1>
+                Return 0 and <span class="highlight">associates</span> <!-- Destacar "Socies" -->
+            </h1>
+        </div>
+        <!-- Botón para abrir el menú -->
+        <button class="menu-button" id="menu-button">☰</button>
     </header>
 
-    <section id="home">
-        <div class="container">
-            <h2>Bienvenido a Return 0</h2>
-            <p>Somos una empresa dedicada a la creación de proyectos innovadores en programación y ciberseguridad.</p>
+    <!-- Menú desplegable -->
+    <div class="full-page-menu" id="full-page-menu">
+        <button class="close-button" id="close-button">×</button> <!-- Botón para cerrar el menú -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="about.html">Acerca de</a></li>
+                <li><a href="#services">Servicios</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#team">Equipo</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+        <!-- Enlaces a redes sociales -->
+        <div class="social-links">
+            <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.github.com" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+    </div>
+
+    <!-- Contenido de la página -->
+    <section class="hero">
+        <img src="RECURS/hero-image.jpg" alt="Desarrollo Web" class="hero-image"> <!-- Imagen destacada -->
+        <div class="hero-text">
+            <h2>Bienvenido a Return 0 and <span class="highlight">associates</span></h2>
+            <p>Somos una empresa de desarrollo web y programación con años de experiencia.</p>
+            <button class="cta-button">Conoce más</button> <!-- Botón de llamada a la acción -->
         </div>
     </section>
-
-    <section id="proyectos">
-        <div class="container">
-            <h2>Nuestros Proyectos</h2>
-            <!-- Aquí se pueden listar los proyectos -->
-        </div>
-    </section>
-
-    <section id="servicios">
-        <div class="container">
-            <h2>Nuestros Servicios</h2>
-            <!-- Aquí se pueden listar los servicios -->
-        </div>
-    </section>
-
-    <section id="contacto">
-        <div class="container">
-            <h2>Contacto</h2>
-            <!-- Formulario de contacto -->
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Return 0. Todos los derechos reservados.</p>
-        </div>
-    </footer>
 
     <script src="script.js"></script>
 </body>
-</html>

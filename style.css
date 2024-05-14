@@ -1,0 +1,156 @@
+/* style.css */
+body {
+    height: 100%; /* Establece la altura del html y el body al 100% */
+    margin: 0; /* Elimina el margen predeterminado */
+    padding: 0; /* Elimina el relleno predeterminado */
+}
+
+/* Estilo del encabezado con nuevo color de fondo */
+.header-background {
+    background-color: #1a1a1a; /* Gris oscuro */
+    padding: 0; /* Modificado a 0 */
+    color: #ffffff; /* Texto blanco */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Marca y logo */
+.brand {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 60px; /* Tamaño del logo */
+    margin-right: 10px; /* Espacio entre el logo y el nombre */
+}
+
+.brand h1 {
+    margin: 0;
+    color: #ffffff; /* Texto blanco */
+}
+
+/* Resaltar "Socies" con un estilo diferente */
+.highlight {
+    color: #00FFFF; /* Cian para resaltar */
+    font-weight: bold; /* Negrita para mayor énfasis */
+}
+
+.menu-button {
+    background: none;
+    border: none;
+    color: #ffffff; /* Botón blanco */
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Menú desplegable que cubre toda la página */
+.full-page-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85); /* Negro con algo de transparencia */
+    color: #ffffff; /* Texto blanco */
+    display: none; /* El menú comienza oculto */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10; /* Asegura que esté por encima de otros elementos */
+    transition: all 0.3s ease-in-out; /* Suavizar transiciones */
+}
+
+.full-page-menu.show {
+    display: flex; /* Clase para mostrar el menú */
+}
+
+/* Estilo del menú */
+.full-page-menu nav ul {
+    list-style: none;
+    padding: 0; /* Elimina el espaciado predeterminado */
+}
+
+.full-page-menu nav ul li {
+    padding: 10px;
+}
+
+.full-page-menu nav ul li a {
+    color: #15a3a3; /* Texto cian */
+    text-decoration: none;
+    font-size: 24px;
+    transition: color 0.3s; /* Suavizar cambios de color */
+}
+
+.full-page-menu nav ul li a:hover {
+    color: #15a3a3; /* Cian más oscuro para el hover */
+}
+
+/* Botón de cierre */
+.close-button {
+    position: absolute;
+    top: 10px; /* Corrige el error de coma */
+    right: 10px;
+    background: none;
+    border: none;
+    color: #ffffff; /* Color blanco para el cierre */
+    font-size: 24px;
+    cursor: pointer; /* Punto y coma para terminar cada declaración */
+}
+
+/* Enlaces a redes sociales */
+.social-links {
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    gap: 10px; /* Espacio entre íconos */
+}
+
+.social-links a {
+    color: #00FFFF; /* Íconos cian */
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #00c2c2; /* Íconos cian más oscuro para el hover */
+}
+
+/* Sección hero con imagen de fondo */
+.hero {
+    position: relative;
+    text-align: center;
+    color: #ffffff;
+}
+
+.hero-image {
+    width: 100%; /* Asegura que la imagen cubra todo el ancho */
+    height: 100%; /* Hace que la imagen cubra el 100% de la altura de la página */
+    object-fit: cover; /* Mantiene la proporción de la imagen y la hace cubrir el contenedor */
+    margin: 0; /* Elimina el margen */
+    padding: 0; /* Elimina el relleno */
+}
+
+.hero-text {
+    position: absolute; /* Permite superponer el texto sobre la imagen */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centrar el texto */
+    background: rgba(0, 0, 0, 0.5); /* Fondo translúcido para el texto */
+    padding: 20px;
+}
+
+.cta-button {
+    background-color: #00FFFF; /* Cian */
+    color: #000000; /* Texto negro */
+    padding: 10px 20px; /* Espaciado del botón */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Suavizar transiciones */
+}
+
+.cta-button:hover {
+    background-color: #00c2c2; /* Efecto hover */
+}
